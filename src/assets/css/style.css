@@ -1,0 +1,16 @@
+.header-box{
+    margin-top: 60px;
+    margin-left: 50px;
+    text-align: center;
+}
+.tb{
+    margin-top: 5%;
+    margin-left: 35%;
+
+}
+#main-container-wrapper{
+    align-items: center;
+}
+.headcss{
+    background-color: aqua;
+}

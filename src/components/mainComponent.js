@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import InputHandler from "./commonInput";
 import SimpleTable from "./simpleTable";
-
+import '../assets/css/style.css'
 function MainComponent(props) {
   const { getUsers, userState, addUser } = props;
 

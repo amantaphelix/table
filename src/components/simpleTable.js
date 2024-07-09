@@ -1,20 +1,28 @@
 import { React } from "react";
-
+import '../assets/css/style.css'
 const SimpleTable = ({ dataSource }) => {
   return (
-    <div>
+    <div className="tb">
       {dataSource.length ? (
-        <>
-          {dataSource.map((item, index) => {
-            return (
-              <div key={index}>
-                <div>Id: {item.id}</div>
-                <div>Name: {item.name}</div>
-                <div>Email: {item.email}</div>
-              </div>
-            );
-          })}
-        </>
+      <table>
+        <thead className="headcss">
+          <th>Id</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Actions</th>
+        </thead>
+        <tbody >
+          {dataSource.map((item, index) => (
+            <tr key={index}>
+              <td>{item.id}</td>
+              <td>{item.name}</td>
+              <td>{item.email}</td>
+              <td><button>Edit</button></td>
+              <td><button>Delete</button></td>
+            </tr>
+           ))}
+        </tbody>
+      </table>
       ) : (
         "No user data"
       )}
